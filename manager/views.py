@@ -10,5 +10,5 @@ def about(request):
     return HttpResponse('<h1>Manager About Page</h1>')
 
 
-def test(request):
+def test1(request):
     return HttpResponse('<h1>Manager Test Page</h1>')
