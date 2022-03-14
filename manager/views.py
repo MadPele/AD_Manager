@@ -3,12 +3,15 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('<h1>Manager Home Page</h1>')
+    metadata = {
+        'title': 'Home'
+    }
+    return render(request, 'manager/home.html', metadata)
 
 
 def about(request):
-    return HttpResponse('<h1>Manager About Page</h1>')
+    metadata = {
+        'title': 'About'
+    }
+    return render(request, 'manager/about.html', metadata)
 
-
-def test1(request):
-    return HttpResponse('<h1>Manager Test Page</h1>')
